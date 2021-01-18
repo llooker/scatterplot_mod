@@ -63,6 +63,8 @@ export function prepareData(data, queryResponse) {
   var meas = [];
   var allFields = [];
 
+  console.log(1,data)
+
   //get the data and store the links
   for (var cell in data) {
     var obj = data[cell];
