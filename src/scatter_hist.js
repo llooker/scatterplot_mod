@@ -125,6 +125,8 @@ export function scatterHist(
   // Move first element (dimension) to last index
   tooltipFields.push(tooltipFields.shift());
 
+  console.log(myData)
+
   //X HISTOGRAM
   var vegaChart = {
     $schema: "https://vega.github.io/schema/vega-lite/v4.json",
