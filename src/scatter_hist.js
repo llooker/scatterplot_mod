@@ -24,6 +24,8 @@ export function scatterHist(
   that.clearErrors();
 
   let { dataProperties, myData } = prepareData(data, queryResponse);
+  console.log(dataProperties)
+  console.log(myData)
   const width = element.clientWidth;
   const height = element.clientHeight;
   const maxX = Math.max(...myData.map((e) => e[config["x"]]));
@@ -124,8 +126,6 @@ export function scatterHist(
 
   // Move first element (dimension) to last index
   tooltipFields.push(tooltipFields.shift());
-
-  console.log(myData)
 
   //X HISTOGRAM
   var vegaChart = {
