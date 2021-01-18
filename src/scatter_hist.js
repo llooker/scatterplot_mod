@@ -74,6 +74,8 @@ export function scatterHist(
     myData = winsorize(myData, config["x"], config["percentile"]);
     myData = winsorize(myData, config["y"], config["percentile"]);
   }
+  console.log(1)
+  console.log(myData)
 
   // Breakpoints not currently supported for scatted histogram
   // let preBin = []
